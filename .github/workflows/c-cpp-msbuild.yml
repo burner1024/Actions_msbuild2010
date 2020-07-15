@@ -11,6 +11,9 @@ jobs:
       - name: Install vcexpress2010
         run: choco install vcexpress2010
 
+      - name: Setup MSBuild.exe
+        uses: warrenbuckley/Setup-MSBuild@v1
+
       - name:  Setup Environment
         run: |
           "echo ::add-path::C:\Program Files (x86)\Microsoft Visual Studio 10.0\Common7\IDE"
