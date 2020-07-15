@@ -28,3 +28,4 @@ jobs:
       - name: Core Build
         working-directory: build
         run: msbuild BuildAll.proj /p:Platform="Win32"
+        shell: cmd
